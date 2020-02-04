@@ -1,0 +1,34 @@
+<html>
+    <head>
+    <link href="/assets/style.css" rel="stylesheet" type="text/css">
+        <title>
+            <%= title %>
+        </title>
+    </head>
+    <body>
+        <% include ./header.ejs %>
+        <h1>Search Collection</h1>
+        <h3>Select search parameter</h3>
+        <form name="form" method="post">
+            <p>
+                <input type="text" name="title" placeholder="title">
+                <input type="submit" value="Search" formaction="/titlesearch">
+            </p>
+            <p>
+                <input type="text" name="author" placeholder="author">
+                <input type="submit" value="Search" formaction="/authorsearch">
+            </p>
+            <p>
+                <select name="type">
+                    <option value="Book">Book</option>
+                    <option value="Card">Card</option>
+                    <option value="Game">Game</option>
+                    <option value="Movie">Movie</option>
+                </select>
+                <input type="submit" value="Search" formaction="/typesearch">
+            </p>
+        </form>
+
+        <% include ./footer.ejs %>
+    </body>
+</html>

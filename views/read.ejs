@@ -1,0 +1,19 @@
+<html>
+    <head>
+    <link href="/assets/style.css" rel="stylesheet" type="text/css">
+        <title>
+            <%= title %>
+        </title>
+    </head>
+    <body>
+        <% include ./header.ejs %>
+        <h1>View Full Collection</h1>
+        <form name="form" method="post">
+            <p>
+                <input type="submit" value="Read" formaction="/read">
+            </p>
+        </form>
+
+        <% include ./footer.ejs %>
+    </body>
+</html>

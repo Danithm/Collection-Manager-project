@@ -1,0 +1,41 @@
+head, header, h1, h3, ul, footer {
+    font-weight: bold;
+    text-align: center;
+    color: lawngreen;
+    box-sizing:border-box;
+    border: 2px solid lawngreen;
+    width: 500px;
+    margin:auto;
+}
+li {
+    list-style-position: outside;
+}
+p {
+    text-align:center;
+}
+input[type=submit], input[type=text], textarea, select {
+    padding: 5px 15px;
+    background: black;
+    border: 1px solid lawngreen;
+    color: lawngreen;
+}
+body {
+    background-color: black;
+}
+a:link {
+    color: darkgreen;
+}   /* unvisited link */
+a:visited {
+    color: purple;
+}   /* visited link */
+a:hover {
+    color: purple;
+}   /* mouse over link */
+a:active {
+    color: darkblue;
+}
+footer {
+    font-weight: bold;
+    text-align: center;
+    color: lawngreen;
+}
